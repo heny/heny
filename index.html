@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="heny/images/heny.ico">
+    <title>项目文件夹</title>
+    <style>
+        body{
+            background: url(bodybg.jpg) no-repeat;
+            background-size:100%;
+            background-attachment:fixed;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (max-width:935px){
+            .wrap{
+                width: 440px;
+                flex-wrap: wrap;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (orientation:portrait){
+            .wrap{
+                width: 200px;
+                flex-direction: column;
+                margin: 0 auto;          
+            }
+            marquee{
+                visibility: visible !important;
+            }
+            body{
+                background: url(portraitbg.jpg) no-repeat;
+                background-size: 100%;
+                background-attachment:fixed;
+            }
+        }
+        .wrap div{
+            -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            margin:10px;
+        }
+        dl{
+            width: 200px;
+        }
+        dt{
+            width: 200px;
+            line-height: 50px;
+            background: rgba(46, 155, 228, 0.5);
+            color: #fff;
+            font-size: 18px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            border-radius: 3px 3px 0 0;
+        }
+        a{
+            color: #ff6700;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.3);
+            border-bottom: 1px solid rgba(255, 255, 255,.3);
+            padding: 5px;
+            display: block;
+            line-height: 30px;
+            height: 30px;
+            transition: .3s;
+        }
+        a:hover{
+            background: rgba(46, 155, 228, 0.2);
+            color: purple;
+        }
+        marquee{
+            font-size: 30px;
+            color: rgba(139, 69, 19,0.8);
+            line-height: 80px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <marquee direction=right>横屏模式效果更佳哦</marquee>
+    <div class="wrap">
+        <div class="box1">
+            <dl>
+                <dt>小米商城</dt>
+                <dd><a href="xiaomi/index.html">小米商城首页</a></dd>
+                <dd><a href="xiaomi/shopdetails.html">小米play详情页</a></dd>
+                <dd><a href="xiaomi/productlist.html">商品列表</a></dd>
+                <dd><a href="xiaomi/shoppingcart.html">购物车</a></dd>
+                <dd><a href="xiaomi/zhuce.html">注册</a></dd>
+                <dd><a href="xiaomi/Sigin.html">登录</a></dd>
+            </dl>
+        </div>
+        <div class="box2">
+            <dl>
+                <dt>优知手机网页</dt>
+                <dd><a href="youzhi/index.html">首页</a></dd>
+                <dd><a href="youzhi/generalize.html">运营推广</a></dd>
+                <dd><a href="youzhi/active.html">运营文章</a></dd>
+            </dl>
+        </div>
+        <div class="box3">
+            <dl>
+                <dt>丘比特官网</dt>
+                <dd><a href="jupyter/Documentation.html">documentation</a></dd>
+            </dl>
+        </div>
+        <div class="box4">
+            <dl>
+                <dt>其他</dt>
+                <dd><a href="others/clock.html">走动的时钟</a></dd>
+                <dd><a href="others/snake.html">贪吃蛇</a></dd>
+                <dd><a href="others/moveBox.html">行走的小方块</a></dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>
