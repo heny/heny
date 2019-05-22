@@ -1,0 +1,12 @@
+@import "public.css";
+.center_context {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 5% 30px;
+}
+h2 {
+  font-size: 35px;
+}
+p {
+  font-size: 16px;
+}
